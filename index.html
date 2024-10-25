@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live Updates Website</title>
+    <title>Live Updates Platform</title>
     <style>
         body {
             margin: 0;
@@ -58,6 +58,13 @@
             margin-top: 0;
         }
         #news { display: block; }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
     </style>
     <script>
         function showSection(sectionId) {
@@ -79,7 +86,6 @@
         <a href="#" onclick="showSection('news')">News</a>
         <a href="#" onclick="showSection('games')">Games</a>
         <a href="#" onclick="showSection('mobiles')">Mobiles</a>
-        <a href="#" onclick="showSection('health')">Health</a>
         <a href="#" onclick="showSection('automobile')">Automobile</a>
     </nav>
 
@@ -87,31 +93,25 @@
         <!-- News Section -->
         <div id="news" class="section">
             <h2>News</h2>
-            <p>Live news updates will appear here. Stay tuned for the latest headlines and breaking stories from around the world.</p>
+            <iframe src="https://www.bbc.com/news" title="News"></iframe>
         </div>
 
         <!-- Games Section -->
         <div id="games" class="section">
             <h2>Games</h2>
-            <p>Find the latest updates on upcoming game releases, eSports events, and more in the gaming world.</p>
+            <iframe src="https://sports.ndtv.com/" title="Games"></iframe>
         </div>
 
         <!-- Mobiles Section -->
         <div id="mobiles" class="section">
             <h2>Mobiles</h2>
-            <p>Discover the newest mobile phones, specs, reviews, and comparisons right here.</p>
-        </div>
-
-        <!-- Health Section -->
-        <div id="health" class="section">
-            <h2>Health</h2>
-            <p>Stay updated with the latest health tips, news on medical advancements, and more.</p>
+            <iframe src="https://www.whatmobile.com.pk/" title="Mobiles"></iframe>
         </div>
 
         <!-- Automobile Section -->
         <div id="automobile" class="section">
             <h2>Automobile</h2>
-            <p>Explore the newest updates in the automobile industry, from electric cars to cutting-edge tech.</p>
+            <iframe src="https://www.pakwheels.com/" title="Automobile"></iframe>
         </div>
     </div>
 
